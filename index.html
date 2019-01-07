@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aircraft incidents visualization</title>
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="http://d3js.org/queue.v1.min.js"></script>
+	<script src="d3-tip.js"></script>
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Aircraft Incidents</h1>
+	<hr>
+	<h2>Incidents Distribution around the World </h2>
+	<div id = "worldmap"><script type="text/javascript" src="worldmaps.js"></script>
+	<div style ="text-align: left" align = "center" class = "center">
+
+ <span id = "worlddescription"> The map above represents the amount of total aircraft incident
+	 happened and how they are distributed around the world.
+	  The deeper the color, the more incidents happened in a certain country.
+		From this graph, we can see that the U.S. contributes the most to the flight accidents
+		in the world with a total number of 1036 cases.</span>
+</span>
+ </div>
+</div>
+
+<hr>
+<h2> Time Distribution</h2>
+ <div id = "graph"><script src="main.js"></script> </div>
+ <div style = "text-align: left" align = "center" class = "center">
+	 <span id ="graphdescription">Recent years have been considerably safer
+for aviation, with fewer than 50 incidents every year between 2013 and 2016, compared
+to as many as 141 as recently as 2006. Over 10 incidents happened in eight of twelve
+months in 2006.
+<br/>
+Annual fatalities have been less than 1000
+since 1996. And we can see a trend of decreasing fatalities in recent years.
+</span>
+ </div>
+ <hr>
+ <h2> Incidents In Relation of Company and Model</h2>
+ <div id="main">
+	<div id="sequence"></div>
+
+	<div id="chart">
+		<div id="explanation" style="visibility: hidden;">
+		<span id="percentage"></span><br/>
+		of total incidents happened <br/>
+		<span id="countS"></span><br/>
+		incidents
+		</div>
+
+	</div>
+
+	</div>
+	<div id="legend" ></div>
+
+	<script type="text/javascript" src="sequences.js"></script>
+	<div style ="text-align: left" align = "center" class = "center1">
+	<span id = "graphdescription">
+		Boeing, the largest aircraft maker has the
+		largest incidents number – 1210 incidents over years. Boeing 737 takes up 26.3%
+		of total happened incidents. Other companies as McDonnell Douglas, Airbus,
+		Embraer and Bombardier take up 15.5%, 11.7%, 6.69%, and 5.39% respectively. This
+		data can only give you’re a brief description of relation between incidents and
+		aircraft makers. However, this does not necessarily mean Boeing 737 is more likely
+		to crash than any other aircraft. An accident rates graph would be more
+		accurate. We cannot provide further graph due to the lack of data.
+	</span>
+</div>
+	<br/>
+	<p>
+	<hr>
+
+ <h2> Incidents In relation to Flight Phase</h2>
+ <div id = "bubble" text-anchor= "middle"><script src="bubble.js"></script> </div>
+ <div style ="text-align: left" align = "center" class = "center">
+	 <span id = "graphdescription">
+		 Aircraft accident also have some relationship with the flight phase.
+		 Taxing and taking off contribute the most to the aircraft accident with a total of 187 count.
+		 Landing and cruising also have a large percentage.
+		 Accidents are distributed evenly among climbing, approaching, standing and descending,
+		 which is about 100 cases on average. The phase that is having the least cases is maneuvering and
+		  some unknown phases that is not recorded. The graph shows that the starting point and
+			ending point are the most dangerous phases for aircraft.
+	 </span>
+ </div>
+ </p>
+</body>
+</html>

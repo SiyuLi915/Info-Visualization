@@ -1,0 +1,264 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400|Exo+2:300,600);
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+
+  background: #fefbf3;
+  color: #475B62;
+  margin: 50px;
+  padding: 20px;
+}
+p {
+  font-weight: 500;
+  font-size: 1.5em;
+  width: 50%;
+
+}
+h1, h2{
+  font-family: 'Roboto Slab', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  /*color: #CB4B19;*/
+  text-align: center;
+  line-height: 190%;
+  position: relative;
+}
+hr{
+  position:relative;
+  color:grey;
+}
+hr.break{
+  height: 1px;
+  color: #819090;
+  background-color:  #819090;
+  border: none;
+}
+hr.divide {
+  height: 30px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.divide:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #8c8b8b;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+hr.break2 {
+    padding: 0;
+    border: none;
+    border-top: medium double grey;
+    color: grey;
+    text-align: center;
+}
+hr.break2:after {
+    content: none;
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #FCF4DC;
+}
+hr.end{
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+h1{
+  font-size:3em;
+  color: #CB4B19;
+}
+h2{
+  font-size:2em;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+.mapName {
+  color: rgb(33,113,181);
+}
+.hidden {
+      display: none;
+    }
+.nonselected {
+  fill:grey;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+border-right: 4px dotted #0074D9;
+border-left: 4px dotted #0074D9;
+    padding: 10px;
+}
+.center1 {
+    margin: auto;
+    width: 60%;
+
+    padding: 10px;
+}
+.bar {
+  fill: rgb(66,146,198);
+}
+.bar:hover {
+  fill: rgb(33,113,181);
+}
+.bar1 {
+  fill: rgba(46, 152, 185, 0.445);
+}
+.bar1:hover {
+  fill: rgba(35, 157, 179, 0.692);
+}
+.bar3 {
+  fill: rgba(255, 3, 3, 0.671);
+}
+.bar3:hover {
+  fill: rgb(181, 33, 33);
+}
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.names {
+fill: none;
+stroke: #fff;
+stroke-linejoin: round;
+}
+
+/* Tooltip CSS */
+    .d3-tip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Arial, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFA500;
+    border-radius: 1px;
+    pointer-events: none;
+    }
+
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 8px;
+      width: 100%;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      pointer-events: none;
+
+    }
+
+    /* Northward tooltips */
+    .d3-tip.n:after {
+      content: "\25BC";
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Eastward tooltips */
+    .d3-tip.e:after {
+      content: "\25C0";
+      margin: -4px 0 0 0;
+      top: 50%;
+      left: -8px;
+    }
+
+    /* Southward tooltips */
+    .d3-tip.s:after {
+      content: "\25B2";
+      margin: 0 0 1px 0;
+      top: -8px;
+      left: 0;
+      text-align: center;
+    }
+
+    /* Westward tooltips */
+    .d3-tip.w:after {
+      content: "\25B6";
+      margin: -4px 0 0 -1px;
+      top: 50%;
+      left: 100%;
+    }
+
+/*    text{
+      pointer-events:none;
+    }*/
+
+    .details{
+      color:white;
+    }
+    #main {
+      float: left;
+      width: 750px;
+    }
+
+    #sidebar {
+      float: left;
+      width: 100px;
+    }
+
+    #sequence {
+      width: 600px;
+      height: 70px;
+    }
+
+    #legend {
+      padding: 10px 0 0 3px;
+    }
+
+    #sequence text, #legend text {
+      font-weight: 600;
+      fill: #fff;
+    }
+
+    #chart {
+      position: relative;
+    }
+
+    #chart path {
+      stroke: #fff;
+    }
+
+    #explanation {
+      position: absolute;
+      top: 260px;
+      left: 305px;
+      width: 140px;
+      text-align: center;
+      color: #666;
+      z-index: -1;
+    }
+
+    #percentage {
+      font-size: 2.5em;
+    }
+    #worlddescription, #graphdescription {
+      font-size: 1.5em
+    }
+    #usadescription {
+     font-size: 1.5em
+   }
